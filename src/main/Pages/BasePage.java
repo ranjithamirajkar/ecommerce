@@ -7,8 +7,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
-
+public Static void main(String args[])
+{
 	public int Random_Number_Generator() {
+}
 		int RandNum = (int) (Math.random() * 999 + 100);
 		return RandNum;
 	}
@@ -50,4 +52,5 @@ public class BasePage {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
+}
 }
