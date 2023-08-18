@@ -12,7 +12,7 @@ public class CreateAnAccountPage extends BasePage {
 	public CreateAnAccountPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+	driver.navigate().to(“https://automationteststore.com/index.php?rt=account/create”);
 	@FindBy(how = How.XPATH, using = "//input[@id='id_gender1']") WebElement Mr_RadioButton;
 	@FindBy(how = How.XPATH, using = "//input[@id='customer_firstname']") WebElement FirstName_Field;
 	@FindBy(how = How.XPATH, using = "//input[@id='customer_lastname']") WebElement LastName_Field;
